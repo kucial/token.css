@@ -10,7 +10,7 @@
     "sass"
   ],
   "scripts": {
-    "build": "gulp build",
+    "build": "gulp sass",
     "dev": "gulp sass:watch"
   },
   "keywords": [
