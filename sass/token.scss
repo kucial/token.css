@@ -1,0 +1,30 @@
+@import 'base.scss';
+
+
+@each $name, $value in $font-weight {
+    .#{$prefix}font-#{$name} {
+        font-weight: $value;
+    }
+}
+
+@each $name, $value in $spacing {
+    @include spacing($name, $value, $prefix)
+}
+
+@for $i from 0 through 10 {
+    @include spacing($i, px-to-rem($i), $prefix)
+}
+
+@each $name, $value in $palette {
+    @include color($name, $value, $prefix);
+    @include bgcolor($name, $value, $prefix);
+    @include bdcolor($name, $value, $prefix);
+}
+
+@each $name, $value in $sizes {
+    @include size($name, $value, $prefix);
+}
+
+@each $name, $config in $typography {
+    @include typography($name, $config, $prefix);
+}

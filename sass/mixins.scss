@@ -1,0 +1,97 @@
+@mixin spacing($name, $value, $prefix: '') {
+    .#{$prefix}m_#{$name} {
+        margin: $value;
+    }
+    .#{$prefix}ml_#{$name} {
+        margin-left: $value;
+    }
+    .#{$prefix}mr_#{$name} {
+        margin-right: $value;
+    }
+    .#{$prefix}mt_#{$name} {
+        margin-top: $value;
+    }
+    .#{$prefix}mb_#{$name} {
+        margin-bottom: $value;
+    }
+    .#{$prefix}mx_#{$name} {
+        margin-left: $value;
+        margin-right: $value;
+    }
+    .#{$prefix}my_#{$name} {
+        margin-top: $value;
+        margin-bottom: $value;
+    }
+    
+    .#{$prefix}p_#{$name} {
+        padding: $value;
+    }
+    .#{$prefix}pl_#{$name} {
+        padding-left: $value;
+    }
+    .#{$prefix}pr_#{$name} {
+        padding-right: $value;
+    }
+    .#{$prefix}pt_#{$name} {
+        padding-top: $value;
+    }
+    .#{$prefix}pb_#{$name} {
+        padding-bottom: $value;
+    }
+    .#{$prefix}px_#{$name} {
+        padding-left: $value;
+        padding-right: $value;
+    }
+    .#{$prefix}py_#{$name} {
+        padding-top: $value;
+        padding-bottom: $value;
+    }
+}
+
+@mixin typography($name, $config, $prefix: '') {
+    $font-size: map-get($config, 'font-size');
+    $line-height: map-get($config, 'line-height');
+    $font-weight: map-get($config, 'font-weight');
+    $margin-top: map-get($config, 'margin-top');
+    $margin-bottom: map-get($config, 'margin-bottom');
+    .#{$prefix}text_#{$name} {
+        font-size: $font-size;
+        line-height: $line-height;
+        @if $font-weight {
+            font-weight: $font-weight;
+        }
+    }
+    @if $margin-top or $margin-bottom {
+        .#{$prefix}m_#{$name} {
+            @if $margin-top {
+                margin-top: $margin-top;
+            }
+            @if $margin-bottom {
+                margin-bottom: $margin-bottom;
+            }
+        }
+    }
+}
+
+@mixin size($name, $value, $prefix: '') {
+    .#{$prefix}size_#{$name} {
+        width: $value;
+        height: $value;
+    }
+}
+
+@mixin color($name, $value, $prefix: '') {
+    .#{$prefix}color_#{$name} {
+        color: $value;
+    }
+}
+@mixin bdcolor($name, $value, $prefix: '') {
+    .#{$prefix}bdcolor_#{$name} {
+        border-color: $value;
+    }
+}
+@mixin bgcolor($name, $value, $prefix: '') {
+    .#{$prefix}bgcolor_#{$name} {
+        background-color: $value;
+    }
+}

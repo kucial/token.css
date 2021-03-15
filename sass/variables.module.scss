@@ -1,0 +1,102 @@
+@import 'function.scss';
+
+$prefix: 'u-' !default;
+
+$spacing: (
+    xxs: px-to-rem(4px),
+    xs: px-to-rem(8px),
+    sm: px-to-rem(12px),
+    md: px-to-rem(16px),
+    lg: px-to-rem(24px),
+    xl: px-to-rem(48px)
+) !default;
+
+$font-weight: (
+    thin: 100,
+    extralight: 200,
+    light: 300,
+    normal: 400,
+    medium: 500,
+    semibold: 600,
+    bold: 700,
+    extrabold: 800,
+    black: 900
+) !default;
+
+
+$typography: (
+    large-title: (
+        font-size: px-to-rem(34px),
+        line-height: px-to-rem(41px),
+        margin-top: map-get($spacing, 'md'),
+        margin-bottom: map-get($spacing, 'sm'),
+    ),
+    title-1: (
+        font-size: px-to-rem(28px),
+        line-height: px-to-rem(34px),
+    ),
+    title-2: (
+        font-size: px-to-rem(22px),
+        line-height: px-to-rem(28px),
+    ),
+    title-3: (
+        font-size: px-to-rem(20px),
+        line-height: px-to-rem(25px),
+    ),
+    headline: (
+        font-size: px-to-rem(17px),
+        line-height: px-to-rem(22px),
+        font-weight: map-get($font-weight, 'semi-bold'),
+    ),
+    body: (
+        font-size: px-to-rem(17px),
+        line-height: px-to-rem(22px),
+        
+    ),
+    callout: (
+        font-size: px-to-rem(16px),
+        line-height: px-to-rem(21px),
+    ),
+    subhead: (
+        font-size: px-to-rem(15px),
+        line-height: px-to-rem(20px),
+    ),
+    footnote: (
+        font-size: px-to-rem(13px),
+        line-height: px-to-rem(18px)
+    ),
+    caption-1: (
+        font-size: px-to-rem(12px),
+        line-height: px-to-rem(16px),
+    ),
+    caption-2: (
+        font-size: px-to-rem(11px),
+        line-height: px-to-rem(13px),
+    )
+) !default;
+
+$border-radius: (
+    sm: px-to-rem(3px),
+    md: px-to-rem(4px),
+    lg: px-to-rem(8px)
+) !default;
+
+$sizes: (
+    sm: px-to-rem(12),
+    md: px-to-rem(16),
+    lg: px-to-rem(24),
+    xl: px-to-rem(48),
+) !default;
+
+$palette: (
+    text: #333,
+    primary: #333,
+    secondary: #1673ba,
+    hint: #c1272d,
+    meta: #666,
+    placholder: #a3a3a3,
+    border: #ddd,
+    bg: #F6F6F6,
+) !default;
+
+$default-border: 1px solid map-get($map: $palette, $key: 'border')  !default;

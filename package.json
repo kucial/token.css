@@ -1,0 +1,26 @@
+{
+  "name": "@kucial/token.css",
+  "version": "0.0.1",
+  "description": "scss token and mixins to generate css utilities for brand style design.",
+  "main": "css/token.css",
+  "style": "css/token.css",
+  "files": [
+    "css/token.css",
+    "LICENSE.md",
+    "sass"
+  ],
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp sass:watch"
+  },
+  "keywords": [
+    "token"
+  ],
+  "author": "kongkx.yang@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2",
+    "sass": "^1.32.8"
+  }
+}
