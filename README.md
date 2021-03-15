@@ -10,11 +10,11 @@
 
 ## mixins
 
-- `spacing` 用于生成间距相关的辅助css。 `m-`, `ml-`
+- `spacing` 用于生成间距相关的辅助css。 `p{t|r|b|l|x|y}-{size}`, `m{t|r|b|l|x|y}-{size}`
 - `typography`
 - `size`
 - `color`
 
 ## 参考资料： 
 
-- [Drapal Design Systems]https://www.figma.com/file/OqWgzAluHtsOd5uwm1lubFeH/Drupal-Design-system?node-id=20274%3A6460
+- [Drapal Design Systems](https://www.figma.com/file/OqWgzAluHtsOd5uwm1lubFeH/Drupal-Design-system?node-id=20274%3A6460)
