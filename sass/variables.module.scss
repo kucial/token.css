@@ -25,28 +25,28 @@ $font-weight: (
 
 
 $typography: (
-    large-title: (
+    largeTitle: (
         font-size: px-to-rem(34px),
         line-height: px-to-rem(41px),
         margin-top: map-get($spacing, 'md'),
         margin-bottom: map-get($spacing, 'sm'),
     ),
-    title-1: (
+    title1: (
         font-size: px-to-rem(28px),
         line-height: px-to-rem(34px),
     ),
-    title-2: (
+    title2: (
         font-size: px-to-rem(22px),
         line-height: px-to-rem(28px),
     ),
-    title-3: (
+    title3: (
         font-size: px-to-rem(20px),
         line-height: px-to-rem(25px),
     ),
     headline: (
         font-size: px-to-rem(17px),
         line-height: px-to-rem(22px),
-        font-weight: map-get($font-weight, 'semi-bold'),
+        font-weight: map-get($font-weight, 'semibold'),
     ),
     body: (
         font-size: px-to-rem(17px),
@@ -65,11 +65,11 @@ $typography: (
         font-size: px-to-rem(13px),
         line-height: px-to-rem(18px)
     ),
-    caption-1: (
+    caption1: (
         font-size: px-to-rem(12px),
         line-height: px-to-rem(16px),
     ),
-    caption-2: (
+    caption2: (
         font-size: px-to-rem(11px),
         line-height: px-to-rem(13px),
     )
@@ -82,9 +82,10 @@ $border-radius: (
 ) !default;
 
 $sizes: (
-    sm: px-to-rem(12),
-    md: px-to-rem(16),
-    lg: px-to-rem(24),
+    xs: px-to-rem(12),
+    sm: px-to-rem(16),
+    md: px-to-rem(24),
+    lg: px-to-rem(36),
     xl: px-to-rem(48),
 ) !default;
 
@@ -100,3 +101,7 @@ $palette: (
 ) !default;
 
 $default-border: 1px solid map-get($map: $palette, $key: 'border')  !default;
+
+$container-width: px-to-rem(960px);
+
+$grids: 5, 24;

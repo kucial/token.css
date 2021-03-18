@@ -10,7 +10,7 @@
 
 ## mixins
 
-- `spacing` 用于生成间距相关的辅助css。 `p{t|r|b|l|x|y}-{size}`, `m{t|r|b|l|x|y}-{size}`
+- `spacing` 用于生成间距相关的辅助css。 `p{t|r|b|l|x|y}_{size}`, `m{t|r|b|l|x|y}_{size}`
 - `typography`
 - `size`
 - `color`
