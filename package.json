@@ -1,6 +1,6 @@
 {
   "name": "@kucial/token.css",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "scss token and mixins to generate css utilities for brand style design.",
   "main": "css/token.css",
   "style": "css/token.css",

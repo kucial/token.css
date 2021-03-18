@@ -10,9 +10,9 @@ $min-rem-pixel: 2px !default;
     $value: strip-unit($pixelValue);
     $base: strip-unit($base);
     @if (abs($value) < $min-rem-pixel ) {
-        @return #{$value}px;
+        @return $value * 1px;
     }
-    @return #{$value / $base}rem;
+    @return $value / $base * 1rem;
     // @return #{$value}px;
 }
 
@@ -20,6 +20,6 @@ $min-rem-pixel: 2px !default;
 @function px-to-em( $pixelValue, $base: $font-size-root) {
     $value: strip-unit($pixelValue);
     $base: strip-unit($base);
-    @return #{$value / $base}em;
+    @return $value / $base * 1em;
     // @return #{$value}px;
 }
